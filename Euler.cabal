@@ -1,0 +1,25 @@
+name:           Euler
+version:        0.1
+cabal-version:  >=1.8
+build-type:     Simple
+author:         Sasha
+
+library
+  hs-source-dirs:  src
+  build-depends:   base >= 4
+  ghc-options:     -Wall
+  exposed-modules:
+                   Kikhteal.Problem1
+
+test-suite spec
+  type:
+      exitcode-stdio-1.0
+  ghc-options:
+      -Wall
+  hs-source-dirs: test
+  main-is: Spec.hs
+  build-depends:
+      Euler,
+      hspec   >= 1.7.2.1,
+      base    == 4.*,
+      QuickCheck 
