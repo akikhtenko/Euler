@@ -9,7 +9,7 @@ library
   build-depends:   base >= 4
   ghc-options:     -Wall
   exposed-modules:
-                   Kikhteal.Problem1
+                   Kikhteal.Problem1, Kikhteal.Bob
 
 test-suite spec
   type:
@@ -22,4 +22,6 @@ test-suite spec
       Euler,
       hspec   >= 1.7.2.1,
       base    == 4.*,
-      QuickCheck 
+      QuickCheck,
+      HUnit
+  other-modules: Kikhteal.BobTest
