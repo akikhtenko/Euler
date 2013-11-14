@@ -5,11 +5,21 @@ build-type:     Simple
 author:         Sasha
 
 library
-  hs-source-dirs:  src
-  build-depends:   base >= 4
+  hs-source-dirs:
+      src,
+      haskell/bob, 
+      haskell/rna-transcription
+  build-depends:   
+      base >= 4,
+      HUnit
   ghc-options:     -Wall
-  exposed-modules:
-                   Kikhteal.Problem1, Kikhteal.Bob
+  exposed-modules: 
+      Kikhteal.Problem1
+  other-modules:
+      Bob,
+      BobTest,
+      DNA,
+      DNATest
 
 test-suite spec
   type:
@@ -24,4 +34,3 @@ test-suite spec
       base    == 4.*,
       QuickCheck,
       HUnit
-  other-modules: Kikhteal.BobTest

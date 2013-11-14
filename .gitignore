@@ -3,3 +3,10 @@
 .settings
 .dist-buildwrapper
 dist
+clojure
+elixir
+javascript
+ruby
+scala
+objective-c
+python
