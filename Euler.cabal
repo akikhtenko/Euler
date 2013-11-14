@@ -8,10 +8,12 @@ library
   hs-source-dirs:
       src,
       haskell/bob, 
-      haskell/rna-transcription
+      haskell/rna-transcription,
+      haskell/word-count
   build-depends:   
       base >= 4,
-      HUnit
+      HUnit,
+      containers
   ghc-options:     -Wall
   exposed-modules: 
       Kikhteal.Problem1
@@ -19,7 +21,9 @@ library
       Bob,
       BobTest,
       DNA,
-      DNATest
+      DNATest,
+      WordCount,
+      WordCountTest
 
 test-suite spec
   type:
